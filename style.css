@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-style {
+  @apply border border-[#ced4da] h-[38px] focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
+}
+
+.input-ring {
+  @apply rounded border border-[#ced4da]
+  text-indigo-600
+  focus:border-indigo-300
+  focus:ring
+  focus:ring-offset-0
+  focus:ring-indigo-200
+  focus:ring-opacity-50;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape - Google Form</title>
+  </head>
+  <body>
+    <main class="text-[#212529] max-w-[800px] mx-auto font-bold">
+      <h1 class="text-h1 text-center py-6">六角西餐廳</h1>
+      <form class="text-base lg:px-0 px-2" id="hexForm">
+        <div class="grid md:grid-cols-2 gap-x-2 mb-4 md:mb-0">
+          <div class="mb-4">
+            <label for="hexName" class="block mb-2">姓名</label>
+            <input type="text" class="input-style w-full" id="hexName" placeholder="王小明" />
+          </div>
+          <div>
+            <label for="hexPhone" class="block mb-2">電話</label>
+            <input type="text" class="input-style w-full" id="hexPhone" placeholder="0912345678" />
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="hexDate" class="block mb-2">日期</label>
+          <input type="date" class="input-style w-full" id="hexDate" />
+          <div id="createHidden"></div>
+        </div>
+        <div class="mb-4">
+          <label for="hexPeopleNum" class="block mb-2">用餐人數</label>
+          <input type="number" class="input-style w-full" id="hexPeopleNum" />
+        </div>
+
+        <div class="mb-6">
+          <label for="hexOthers" class="block mb-2">其它項目</label>
+          <p class="flex items-center mb-1">
+            <input type="checkbox" class="input-ring" value="需要兒童座椅" />
+            <span class="ml-[6px]">需要兒童座椅</span>
+          </p>
+          <p class="flex items-center mb-1">
+            <input type="checkbox" class="input-ring" value="素食點餐" />
+            <span class="ml-[6px]">素食點餐</span>
+          </p>
+          <p class="flex items-center mb-1">
+            <input type="checkbox" class="input-ring" value="吸煙區" />
+            <span class="ml-[6px]">吸煙區</span>
+          </p>
+        </div>
+        <button type="button" id="submitBtn" class="w-full bg-[#212529] text-white py-2 hover:bg-indigo-800">
+          送出
+        </button>
+      </form>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
